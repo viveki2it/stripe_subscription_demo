@@ -74,7 +74,7 @@ class WebhooksController < ApplicationController
   def full_fill_order(checkout_session)
 
     # Find the user and assign customer id from Stripe
-    user = User.find_id(id: checkout_session.client_reference_id)
+    user = User.find_by(id: checkout_session.client_reference_id)
     user.update(stripe_id: checkout_session.customer)
 
     # Retrieve new subscription via Stripe using subscription_id
