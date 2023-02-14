@@ -1,4 +1,0 @@
-WEBHOOK_SIGNING_SECRET: ""
-CHECKOUT_BASE_URL: 'http://localhost:3000'
-STRIPE_API_KEY: "sk_test_8phA1wg0C8RBvJkVPjXlY9Ps00J7rrse2H"
-STRIPE_PRICE_ID: "price_1MauvpJmHO7MeEh2qnZcu4rc"
