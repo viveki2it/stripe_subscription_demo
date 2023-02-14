@@ -16,7 +16,7 @@ class SubscriptionsController < ApplicationController
       return redirect_to root_path
     end
     if session.client_reference_id.present?
-      user = User.find_id(id: session.client_reference_id)
+      user = User.find_by(id: session.client_reference_id)
       user&.update(stripe_id: session.customer)
     end
 
