@@ -1,0 +1,10 @@
+<h1>Stripe Demo</h1>
+
+<!-- Button trigger modal -->
+<%= form_tag create_checkout_session_subscriptions_path, method: :post do  %>
+  <div class="form-group">
+    <%= text_field_tag :email, nil, { email: true, required: true, placeholder: "Enter Email", class: "form-control" } %>
+  </div>
+  <br/>
+  <%= submit_tag "Checkout", data: { turbo: false }, class: "btn btn-primary" %>
+<% end %>
